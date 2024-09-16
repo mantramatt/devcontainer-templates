@@ -1,0 +1,32 @@
+{
+	"name": "MANTRA Rust CosmWasm",
+	"image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
+	"postCreateCommand": "cargo install cosmwasm-check",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				//"Elrond.vscode-elrond-ide",
+				"rust-lang.rust-analyzer",
+				"vadimcn.vscode-lldb",
+				"dtsvet.vscode-wasm"
+			],
+			"settings": {
+				"launch": {
+					"version": "0.2.0",
+					"configurations": [],
+					"compounds": []
+				},
+				"terminal.integrated.env.linux": {},
+				"terminal.integrated.defaultProfile.linux": "bash"
+			}
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/go:1": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/wasm32-unknown-unknown:0": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	}
+	// Placeholders
+	// "forwardPorts": [],
+	// "remoteUser": "root"
+}
