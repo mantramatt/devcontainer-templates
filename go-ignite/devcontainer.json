@@ -1,0 +1,11 @@
+{
+    "name": "MANTRA Chain Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/go:1-1.23-bookworm",
+    "postCreateCommand": "curl https://get.ignite.com/cli | bash && mv ignite /usr/local/go/bin"
+    // Placeholders for extensions, features, and customizations
+    // "features": {},
+    // "forwardPorts": [],
+    // "postCreateCommand": "yarn install",
+    // "customizations": {},
+    // "remoteUser": "root"
+}
